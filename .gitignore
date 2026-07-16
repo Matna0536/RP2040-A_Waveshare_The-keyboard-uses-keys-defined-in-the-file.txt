@@ -1,4 +1,6 @@
 # The keyboard uses the keys defined in a file named .txt
 # แป้นพิมพ์ใช้ปุ่มที่กำหนดไว้ในไฟล์ .txt
-# โปรดติดตั้ง ไลบรารี CircuitPython  Download link: https://circuitpython.org/board/waveshare_rp2040_zero/
-# ไลบรารี CircuitPython  https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/download/20260715/adafruit-circuitpython-bundle-10.x-mpy-20260715.zip
+# โปรดติดตั้ง ไลบรารี CircuitPython  Download link:
+curl -sL https://circuitpython.org/board/waveshare_rp2040_zero/
+# ไลบรารี CircuitPython  
+curl -sL https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/download/20260715/adafruit-circuitpython-bundle-10.x-mpy-20260715.zip
