@@ -1,6 +1,71 @@
-# The keyboard uses the keys defined in a file named .txt
-# แป้นพิมพ์ใช้ปุ่มที่กำหนดไว้ในไฟล์ .txt
-# โปรดติดตั้ง ไลบรารี CircuitPython  Download link:
-curl -sL (https://circuitpython.org/board/waveshare_rp2040_zero/)
-# ไลบรารี CircuitPython  
-curl -sL (https://github.com/adafruit/Adafruit_CircuitPython_Bundle/releases/download/20260715/adafruit-circuitpython-bundle-10.x-mpy-20260715.zip)
+# ============================================
+# .gitignore สำหรับโปรเจกต์ CircuitPython
+# (Waveshare RP2040 Zero - Custom Keyboard)
+# ============================================
+
+# --- CircuitPython Bundle / Library ที่ดาวน์โหลดมา ---
+adafruit-circuitpython-bundle-*/
+adafruit-circuitpython-bundle-*.zip
+*bundle*.zip
+lib/
+!lib/.gitkeep
+
+# --- ไฟล์ระบบของ CircuitPython บอร์ด (เวลา mount เป็น USB drive) ---
+.fseventsd/
+.metadata_never_index
+.Trashes
+boot_out.txt
+CIRCUITPY/
+
+# --- Python cache / compiled files ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.mpy
+
+# --- Virtual environment (ถ้ามีใช้ฝั่ง dev/tools) ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Windows ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Linux ---
+.directory
+
+# --- Log / temp files ---
+*.log
+*.tmp
+*.bak
+*.old
+
+# --- ไฟล์ config ส่วนตัว / secrets (ถ้ามี) ---
+secrets.py
+.env
+
+# --- Archive / downloaded assets ---
+*.zip
+*.tar.gz
+
+# --- หมายเหตุ: ไฟล์ .txt ที่ใช้กำหนดปุ่มคีย์บอร์ด ---
+# ถ้าต้องการ "ไม่" ให้ track ไฟล์ config ปุ่มบางไฟล์ ให้ระบุชื่อไฟล์ตรงนี้ เช่น:
+# keymap_local.txt
+# แต่ถ้าไฟล์ .txt เป็นส่วนสำคัญของโปรเจกต์ (เช่น keymap.txt หลัก) ไม่ต้อง ignore มัน
