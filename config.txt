@@ -1,0 +1,9 @@
+# รูปแบบ: KEY=VALUE,MODE[,ENTER]
+# MODE: PIN (numpad, ตัวเลขล้วน) / TEXT (คีย์บอร์ดเต็ม,Full keyboard) / RUN (เปิด Win+R)
+
+GP28=6543210,PIN,ENTER
+GP27=123456,PIN
+GP26=https://chat.deepseek.com,TEXT,ENTER
+GP15=https://youtu.be/0GEX_sVwUn4?si=-6h38WKE3C18WE1y,RUN
+GP14=Full keyboard ,TEXT,ENTER
+GP12=123456 Full keyboard,TEXT
